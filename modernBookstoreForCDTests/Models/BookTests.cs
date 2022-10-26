@@ -21,6 +21,7 @@ namespace modernBookstoreForCD.Models.Tests
         {
             string str = bookGood.ToString();
             Assert.AreEqual("Id: 1, Title: Good Title, Price: 10", str);
+            Assert.Fail();
         }
 
         [TestMethod()]
