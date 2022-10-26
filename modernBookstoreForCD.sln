@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modernBookstoreForCD", "modernBookstoreForCD\modernBookstoreForCD.csproj", "{D3E35942-8B9D-4795-BEA8-BE1843CBD4BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modernBookstoreForCDTests", "modernBookstoreForCDTests\modernBookstoreForCDTests.csproj", "{C69A722B-E23A-4E13-8F9A-9B690A8D6EF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3E35942-8B9D-4795-BEA8-BE1843CBD4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E35942-8B9D-4795-BEA8-BE1843CBD4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E35942-8B9D-4795-BEA8-BE1843CBD4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E35942-8B9D-4795-BEA8-BE1843CBD4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69A722B-E23A-4E13-8F9A-9B690A8D6EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69A722B-E23A-4E13-8F9A-9B690A8D6EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69A722B-E23A-4E13-8F9A-9B690A8D6EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69A722B-E23A-4E13-8F9A-9B690A8D6EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9A851DD-38BC-4283-BCAB-5D81ACBAD496}
+	EndGlobalSection
+EndGlobal
