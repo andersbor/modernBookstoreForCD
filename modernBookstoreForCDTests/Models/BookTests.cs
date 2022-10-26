@@ -11,28 +11,40 @@ namespace modernBookstoreForCD.Models.Tests
     [TestClass()]
     public class BookTests
     {
+        private Book bookGood = new() { Id = 1, Title = "Good Title", Price = 10 };
+        private Book bookTitleNull = new() { Id = 2, Title = null, Price = 10 };
+        private Book bookTitleTooShort = new() { Id = 3, Title = "A", Price = 10 };
+        private Book bookPriceNegative = new() { Id = 4, Title = "Good Title", Price = -1 };
+
         [TestMethod()]
         public void ToStringTest()
         {
-            Assert.Fail();
+            string str = bookGood.ToString();
+            Assert.AreEqual("Id: 1, Title: Good Title, Price: 10", str);
         }
 
         [TestMethod()]
         public void ValidateTitleTest()
         {
-            Assert.Fail();
+            bookGood.ValidateTitle();
+            Assert.ThrowsException<ArgumentNullException>(() => bookTitleNull.ValidateTitle());
+            Assert.ThrowsException<ArgumentException>(() => bookTitleTooShort.ValidateTitle());
         }
 
         [TestMethod()]
         public void ValidatePriceTest()
         {
-            Assert.Fail();
+            bookGood.ValidatePrice();
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => bookPriceNegative.ValidatePrice());
         }
 
         [TestMethod()]
         public void ValidateTest()
         {
-            Assert.Fail();
+            bookGood.Validate();
+            Assert.ThrowsException<ArgumentNullException>(() => bookTitleNull.Validate());
+            Assert.ThrowsException<ArgumentException>(() => bookTitleTooShort.Validate());
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => bookPriceNegative.Validate());
         }
     }
 }
